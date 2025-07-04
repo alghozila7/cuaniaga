@@ -6,13 +6,13 @@ A RESTful backend service for managing users, authentication, products, and tran
 
 ## 🚀 Features
 
-- 🔐 User Authentication (JWT-based)
-- 👤 Role Management (User, Admin, Moderator)
-- 🛒 Product Management (CRUD by Admin)
-- 💸 Transaction System with multiple products per transaction
-- 📦 Inventory Control (auto stock reduction)
-- 👨‍👩‍👧 User-owned Transactions
-- ✅ Middleware for route protection and role-based access
+- User Authentication (JWT-based)
+- Role Management (User, Admin, Moderator)
+- Product Management (CRUD by Admin)
+- Transaction System with multiple products per transaction
+- Inventory Control (auto stock reduction)
+- User-owned Transactions
+- Middleware for route protection and role-based access
 
 ---
 
@@ -30,26 +30,19 @@ A RESTful backend service for managing users, authentication, products, and tran
 
 1. **Clone the repository**
 
-git clone https://github.com/yourusername/cuaniaga-api.git
-cd cuaniaga-api
+- git clone https://github.com/alghozila7/cuaniaga.git
+- cd cuaniaga
 
 2. **Install dependencies**
 
-npm install
+- npm install
 
 3. **Configure database**
 
-Edit app/config/db.config.js:
+- Edit app/config/db.config.js:
 
-module.exports = {
-  HOST: "localhost",
-  USER: "your-db-username",
-  PASSWORD: "your-db-password",
-  DB: "cuaniaga_db",
-  dialect: "mysql", // or "postgres"
-  pool: { max: 5, min: 0, acquire: 30000, idle: 10000 }
-};
+<pre><code>module.exports = { HOST: "localhost", USER: "your-db-username", PASSWORD: "your-db-password", DB: "cuaniaga_db", dialect: "mysql", // or "postgres" pool: { max: 5, min: 0, acquire: 30000, idle: 10000 } }; </code></pre>
 
 4. **Run the server**
 
-node server.js
+- node server.js
